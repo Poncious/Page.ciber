@@ -37,8 +37,8 @@ drop-shadow(0 0 40px rgba(2, 223, 32, 0.5));
 }
 .text {
   position: absolute  ;
-  color: rgb(2, 173, 31); 
-  font-size: 70px; 
+  color: rgb(0, 255, 42); 
+  font-size: 5vw; 
   text-align: center; 
   z-index: 2; 
 }
@@ -46,8 +46,8 @@ drop-shadow(0 0 40px rgba(2, 223, 32, 0.5));
 .text2 {
   position: absolute;
   top: 80%; 
-  color: rgb(2, 173, 31); 
-  font-size: 40px; 
+  color: rgb(0, 255, 42); 
+  font-size: 3vw; 
   text-align: center; 
   z-index: 2; 
 }
@@ -64,13 +64,13 @@ drop-shadow(0 0 40px rgba(2, 223, 32, 0.5));
   background: rgba(30, 37, 31, 0.7);
   padding: 10px 20px;  
   border-radius: 10px; 
-  width: 100%;
+  width: auto;
 }
 
 .nav-item {
-  margin: 0 100px; 
+  margin: 0 20px;; 
   color: rgb(7, 173, 29); 
-  font-size: 40px; 
+  font-size: 4vw; 
   cursor: pointer; 
   transition: transform 0.4s; 
 }
@@ -80,3 +80,30 @@ drop-shadow(0 0 40px rgba(2, 223, 32, 0.5));
   transform: rotateX(360deg); 
 }
 
+@media (max-width: 768px) {
+  .text {
+    font-size: 6vw; 
+  }
+
+  .text2 {
+    font-size: 4vw; 
+  }
+
+  .nav-item {
+    font-size: 5vw; 
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 7vw; 
+  }
+
+  .text2 {
+    font-size: 5vw; 
+  }
+
+  .nav-item {
+    font-size: 6vw; 
+  }
+}
