@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; 
+import cadeadoImg from './cadeado.png';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="background" />
+        <img src={cadeadoImg} alt="Cadeado" className="image" />
+
+        <h2 className="text">Júlio Pôncio</h2> 
+        <div className="text2">Specialist in Cibersecurity</div>
+
+        <div className="nav">
+        <div className="nav-item">Home</div>
+        <div className="nav-item">Sobre</div>
+        <div className="nav-item">Serviços</div>
+        <div className="nav-item">Contato</div>
+       </div>
+
+
+       <div className="content">
+        <div className="section">Conteúdo da Seção 1</div>
+        <div className="section">Conteúdo da Seção 2</div>
+        <div className="section">Conteúdo da Seção 3</div>
+        <div className="section">Conteúdo da Seção 4</div>
+        <div className="section">Conteúdo da Seção 5</div>
+      </div>
+      </div>
   );
-}
+};
 
 export default App;
