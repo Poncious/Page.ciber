@@ -19,13 +19,6 @@ const App = () => {
        </div>
 
 
-       <div className="content">
-        <div className="section">Conteúdo da Seção 1</div>
-        <div className="section">Conteúdo da Seção 2</div>
-        <div className="section">Conteúdo da Seção 3</div>
-        <div className="section">Conteúdo da Seção 4</div>
-        <div className="section">Conteúdo da Seção 5</div>
-      </div>
       </div>
   );
 };
