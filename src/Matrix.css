@@ -1,0 +1,12 @@
+.matrix {
+    position: fixed; /* Fixa o elemento na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca atrás de outros elementos */
+    overflow: hidden; /* Evita barras de rolagem */
+    /* Adicione aqui seus estilos para o efeito Matrix */
+    background-color: black; /* Fundo preto */
+    /* Aqui você pode adicionar animações e efeitos que compõem o efeito Matrix */
+  }
