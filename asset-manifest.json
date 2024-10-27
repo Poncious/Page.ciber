@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Page.ciber/static/css/main.e7269bf0.css",
-    "main.js": "/Page.ciber/static/js/main.94abbfbe.js",
+    "main.css": "/Page.ciber/static/css/main.636e44ce.css",
+    "main.js": "/Page.ciber/static/js/main.f5dad82e.js",
     "static/js/453.9a020033.chunk.js": "/Page.ciber/static/js/453.9a020033.chunk.js",
+    "static/media/besouro.png": "/Page.ciber/static/media/besouro.84db0b2c714d3e164e12.png",
     "static/media/cadeado.png": "/Page.ciber/static/media/cadeado.583c34e9f75d71bb462e.png",
     "index.html": "/Page.ciber/index.html",
-    "main.e7269bf0.css.map": "/Page.ciber/static/css/main.e7269bf0.css.map",
-    "main.94abbfbe.js.map": "/Page.ciber/static/js/main.94abbfbe.js.map",
+    "main.636e44ce.css.map": "/Page.ciber/static/css/main.636e44ce.css.map",
+    "main.f5dad82e.js.map": "/Page.ciber/static/js/main.f5dad82e.js.map",
     "453.9a020033.chunk.js.map": "/Page.ciber/static/js/453.9a020033.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7269bf0.css",
-    "static/js/main.94abbfbe.js"
+    "static/css/main.636e44ce.css",
+    "static/js/main.f5dad82e.js"
   ]
 }
