@@ -10,10 +10,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  min-height: 100vh;
   background-color: black; 
   position: relative;
-  overflow: hidden; 
+  overflow: auto; 
 }
 
 .background {
@@ -27,35 +27,48 @@
 }
 
 .image {
-  width: 20vw;
+  width: 35vw;
+  max-width: 400px;
   height: auto;
-  position: fixed;
+  position: fixed; /* Isso mantém a imagem na mesma posição */
   z-index: 1; 
   border-radius: 10px; 
-filter: drop-shadow(0 0 20px rgba(30, 255, 0, 0.7)) 
-drop-shadow(0 0 40px rgba(145, 255, 0, 0.5)); 
+  filter: drop-shadow(0 0 20px rgba(30, 255, 0, 0.7)) 
+          drop-shadow(0 0 40px rgba(145, 255, 0, 0.5)); 
+  top: 20%; /* Ajuste conforme necessário */
+  left: 50%; /* Ajusta a posição horizontal */
+  transform: translateX(-50%); /* Centraliza horizontalmente */
 }
+
+.service-image {
+  width: 100px; /* Ajuste conforme necessário */
+  height: auto; /* Mantém a proporção */
+  display: block; /* Garante que a imagem seja exibida */
+  margin: 0 auto; /* Centraliza a imagem, se desejado */
+}
+
+
 .text {
   font-family: 'Source Code Pro', monospace; 
-  font-size: 5vw; 
-  position: absolute; 
-  top: 20%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  font-size: clamp(20px, 5vw, 40px);
   color: rgb(238, 255, 0); 
   text-align: center; 
   z-index: 2; 
+  position: absolute; /* Para usar 'top' e 'left' */
+  top: 3%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centralizar corretamente */
 }
 .text2 {
   font-family: 'Source Code Pro', monospace; 
-  font-size: 3vw; 
-  position: absolute; 
-  top: 80%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  font-size: clamp(25px, 3vw, 45px);
   color: rgb(238, 255, 0); 
   text-align: center; 
   z-index: 2; 
+  position: absolute; /* Para usar 'top' e 'left' */
+  top: 20%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centralizar corretamente */
 }
 
 .nav {
@@ -76,7 +89,7 @@ drop-shadow(0 0 40px rgba(145, 255, 0, 0.5));
   font-family: 'Source Code Pro', monospace;
   margin: 0 20px;; 
   color: rgb(9, 255, 0); 
-  font-size: 4vw; 
+  font-size: clamp(15px, 4vw, 25px);
   cursor: pointer; 
   transition: transform 0.4s; 
 }
@@ -88,29 +101,11 @@ drop-shadow(0 0 40px rgba(145, 255, 0, 0.5));
 
 
 @media (max-width: 768px) {
-  .text {
-    font-size: 6vw; 
+  .matrix-effect {
+      font-size: 12px; 
+      line-height: 1.5; 
   }
-
-  .text2 {
-    font-size: 4vw; 
-  }
-
-  .nav-item {
-    font-size: 5vw; 
-  }
-}
-
-@media (max-width: 480px) {
-  .text {
-    font-size: 7vw; 
-  }
-
-  .text2 {
-    font-size: 5vw; 
-  }
-
-  .nav-item {
-    font-size: 6vw; 
-  }
+}#home, #about, #services, #contact {
+  padding: 80px 0;
+  height: 100vh;
 }

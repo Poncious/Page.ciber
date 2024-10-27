@@ -1,8 +1,10 @@
 import React, { useEffect , useState } from 'react';
 import './App.css'; 
 import cadeadoImg from './cadeado.png';
+import besouroImg from "./besouro.png"
 import Matrix from './Matrix';
 import AboutMe from './AboutMe';
+
  
 const App = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -10,15 +12,15 @@ const App = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      setScrolling(true); // Define scrolling como true
+      setScrolling(true); 
       section.scrollIntoView({ behavior: 'smooth' });
-      setTimeout(() => setScrolling(false), 1000); // Reseta scrolling após 1 segundo
+      setTimeout(() => setScrolling(false), 1000); 
     }
   };
 
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if (event.key === 'PageDown' && !scrolling) { // Verifica se não está rolando
+      if (event.key === 'PageDown' && !scrolling) { 
         event.preventDefault();
         scrollToSection('about');
       }
@@ -29,7 +31,7 @@ const App = () => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [scrolling]); // Adiciona scrolling como dependência
+  }, [scrolling]); 
 
 
   return (
@@ -50,8 +52,8 @@ const App = () => {
       </div>
 
       <div id="home">
-        <h1>Bem-vindo à minha página!</h1>
-     
+  <h1>Bem-vindo à minha página!</h1>
+  <p>Conteúdo adicional para permitir a rolagem...</p>
       </div>
 
       <div id="about">
@@ -60,7 +62,8 @@ const App = () => {
       
       <div id="services">
         <h2>Serviços</h2>
-      
+        <img src={besouroImg} alt="Descrição da imagem" className="service-image" />
+
       </div>
       
       <div id="contact">
